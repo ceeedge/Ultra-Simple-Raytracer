@@ -36,7 +36,7 @@ Color ray_color(const Ray& r)
         t * Color{0.5, 0.7, 1.0}; 
 }
 
-int main() 
+int main(void) 
 {
     // Image
     constexpr auto aspectRatio{16.0/9.0};
@@ -44,9 +44,9 @@ int main()
     constexpr auto imageHeight{static_cast<int>(imageWidth/aspectRatio)};
 
     // Camera
-    constexpr auto viewportHeight{2.0};
+    constexpr auto viewportHeight{2.0f};
     constexpr auto viewportWidth{aspectRatio * viewportHeight};
-    constexpr auto focalLength{1.0};
+    constexpr auto focalLength{1.0f};
 
     auto origin{Point3{0, 0, 0}};
     auto horizontal{Vec3{viewportWidth, 0, 0}};
