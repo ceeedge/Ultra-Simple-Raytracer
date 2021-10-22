@@ -34,3 +34,5 @@
 # Output Folders
 bin
 build
+build-debug
+build-release
